@@ -1,4 +1,4 @@
-# <img src="describe/logo.png" width="110" height="100"> HerbiEstim 
+# HerbiEstim 
 
   *HerbiEstim* is a Python implementation of a deep learning- and image processing-based method for automatic estimation of leaf herbivore damage. This method takes scanned or photographed leaf images as input and provides estimates of area and percentage of leaf damage. The package consists of a set of functions and step-by-step guidance for applying the method.
   
@@ -6,11 +6,11 @@
 
 
 ### Overview 
-  The application of this method includes several steps: standardizing leaf images, synthesizing training data, training deep learning models, reconstructing damaged leaves, and measuring the area of damaged and undamaged regions. Users have the option to either train their own models using the provided codes or utilize pre-trained models for predicting the area and percentage of leaf herbivore damage.  
+  The application of this method includes several procedures: standardizing leaf images, synthesizing training data, training models, reconstructing damaged leaves, and measuring leaf area. Users have the option to either train their own models using the provided codes or utilize pre-trained models for predicting the area and percentage of leaf herbivore damage.  
   
   The method employs [pix2pix](https://doi.org/10.48550/arXiv.1611.07004), a conditional generative adversarial network (cGAN) designed for image-to-image translation, to reconstruct intact images of damaged leaves. The implementation of pix2pix was developed by [Jun-Yan Zhu et al.](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).  
   
-  The following figure illustrates the underlying logic of the method and the structure of codes and files in this repository, in order to help users better understand and adapt our approach.  
+  The following figure illustrates the procedures for applying the method, as well as the corresponding codes and files in this repository, in order to help users better understand and adapt our approach.  
 <p align="center">
   <img src="describe/structure.png" width="680" height="910">
 </p>
